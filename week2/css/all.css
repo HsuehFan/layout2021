@@ -10,11 +10,6 @@ img{
 
 }
 
-
-
-
-
-
 .container{
     width: 1920px;
     height: auto;
@@ -64,11 +59,14 @@ img{
     line-height: 42px;
 }
 .content1 li::before{
-    content: '●';
-    padding-right: 16px;
-    color: #891818;
-    font-size: 42px;
-    line-height: 50px;
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+    background-color: #891818;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 .content2{
     background-color: #000;
@@ -96,6 +94,7 @@ img{
     justify-content: center;
 }
 .foot{
+    width: 100%;
     background-color: #000;
     padding-bottom: 64px;
 }

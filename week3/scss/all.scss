@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import "_reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+$navBg: #AA0601;
+.bgPink{
+    background-color: #AA06010D;
+} 
+
+// 字體設定
+h1{
+    color: #650300;
+    font-size: 64px;
+    line-height: 92px;
+    font-weight: 900;
+}
+h2{
+    color: #650300;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+h5{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #650300;
+}
+h6{
+    font-size: 16px;
+    line-height: 24px;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif, "Microsoft JhengHei", "微軟正黑體";
+}
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.nav{
+    background-color: $navBg;
+    padding: 0px 88px;
+    img{
+        padding: 30px 0px;
+    }
+    .logo{
+        max-width: 10%;
+    }
+    .menu{
+        max-width: 50%;
+        align-items: center;
+        li{ 
+            line-height: 30px;
+            padding-left: 64px;
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+                font-size: 20px;
+                &:hover{
+                    font-size: 22px;
+
+                }
+            }
+            
+        }
+    }
+}
+    
+
+.banner{
+    max-width: 100%;
+    height: auto;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png');
+    .title{
+        padding-top: 348px;
+        padding-bottom: 352px;
+        padding-left: 939px;
+        text-align: right;
+        p{
+            font-size: 36px;
+            color: #650300;
+            font-weight: 400;
+            padding-right: 407px;
+            
+        }
+        h1{
+            padding-right: 405px;
+            
+        }
+    }
+}
+.content{
+    padding: 60px 405px 80px;
+}
+.bgPink{
+    ul{
+        li{
+            margin-right: 30px;
+            max-width: calc((100%-46.875%)/4);
+            img{
+                margin-top: 48px;
+                margin-bottom: 25px;
+                }
+            &:nth-child(4) img{
+            margin-bottom: 45px;
+            }
+            h5{
+                text-align: center;
+            }
+        
+        }
+    }
+}
+.products{
+    h2{
+        margin-bottom: 40px;
+    }
+    ul{
+        li{
+            display: flex;
+            margin-bottom: 32px;
+            img{
+                margin-right: 32px;
+            }
+            h2{
+                font-family: 'Roboto', sans-serif;
+                color: #AA0601;
+                font-weight: 500;
+                font-style: italic;
+                margin-right: 32px;
+            }
+            &:nth-child(2){
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+
+
+
+
+
+// display flex 設定
+.d-flex{
+    display: flex;
+}
+.d-flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.d-flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+.d-flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+.d-flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+// margin-bottom setting
+// mb-4{
+//     margin-bottom: 32px;
+// }
+// mb-5{
+//     margin-bottom: 40px;
+// }
