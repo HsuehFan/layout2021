@@ -59,8 +59,7 @@ body{
                 color: #FFFFFF;
                 font-size: 20px;
                 &:hover{
-                    font-size: 22px;
-
+                font-size: 22px;
                 }
             }
             
@@ -93,6 +92,10 @@ body{
 }
 .content{
     padding: 60px 405px 80px;
+    h2{
+        color: #650300;
+        margin-bottom: 40px;
+    }
 }
 .bgPink{
     ul{
@@ -121,18 +124,91 @@ body{
         li{
             display: flex;
             margin-bottom: 32px;
+            // justify-content: center;
+            align-items: center;
             img{
-                margin-right: 32px;
+                margin-left: 32px;
             }
             h2{
                 font-family: 'Roboto', sans-serif;
                 color: #AA0601;
                 font-weight: 500;
                 font-style: italic;
-                margin-right: 32px;
+                
             }
             &:nth-child(2){
                 flex-direction: row-reverse;
+                
+            }
+        }
+    }
+}
+.adjust{
+    max-width: 1920px;
+    height: 705px;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png');
+    background-position: center;
+}
+.ad{
+    h2{
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    .item1{
+        min-width: 540px;
+        height: 455px;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png');
+        background-size: 540px 455px;
+        // background-repeat: no-repeat;
+        filter: grayscale(60%) brightness(1.5); 
+        h1{
+            text-align: center;
+            font-size: 72px;
+            color: #AA0601;
+            padding-top: 35%;
+        }
+    }
+    .item2{
+        min-width: 540px;
+        height: 455px;
+        line-height: 455px;
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png');
+        background-size: 540px 455px;
+        // background-repeat: no-repeat;
+        filter: grayscale(60%) brightness(1.5); 
+        h1{
+            text-align: center;
+            font-size: 72px;
+            color: #AA0601;
+            padding-top: 35%;
+            
+        }
+    }
+}
+.customer{
+    li{
+        max-width: 255px;
+        height: 460px;
+        position: relative;
+        box-shadow: 0 0 10px #777777;
+        img{
+            max-width: 255px;
+            max-height: 256px;
+            background-size: contain;
+            border-radius: 4px 4px 0 0;
+            
+        }
+        .card-body{
+            padding: 16px;
+            p{
+                font-size: 14px;
+                line-height: 21px;
+            }
+            span{
+                font-size: 14px;
+                line-height: 21px;
+                position: absolute;
+                bottom: 16px;
             }
         }
     }
