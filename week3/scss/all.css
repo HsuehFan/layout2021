@@ -216,7 +216,7 @@ body {
 }
 
 .products-List li:nth-child(1) p::before {
-  content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/1f2e6cff9188f609437df7b39c0abd426915d65f/week3/auto_awesome_black_24dp.svg");
+  content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/0d00c173d23b913a24324cba534525a0da64809e/week3/auto_awesome_black18dp.svg");
   background-size: 40px 40px;
 }
 
@@ -233,7 +233,6 @@ body {
 
 .products-List li:nth-child(2) p::before {
   content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-sun.svg");
-  background-size: 24px 24px;
   margin-right: 10px;
 }
 
