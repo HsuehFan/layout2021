@@ -144,15 +144,27 @@ body{
         }
     &:nth-child(2){
         flex-direction: row-reverse;
+
             p{
                 margin-right: 30px;
                 &::before{
                     content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-sun.svg");
-                    background-size: 44px 44px;
+                    background-size: 24px 24px;
                     margin-right: 10px;
                 }
             }
         }
+        &:nth-child(3){
+                p{
+                    
+                    &::before{
+                        content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
+                        background-size: 24px 24px;
+                        margin-left: 44px;
+                        margin-right: 22px;
+                    }
+                }
+            }
     }
 
 
