@@ -216,7 +216,7 @@ body {
 }
 
 .products-List li:nth-child(1) p::before {
-  content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/c526459838ce3190e7a12aab2ed679beb5950e80/week3/auto_awesome_black_18dp.svg");
+  content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/0e37391a13537b049b00d46205272f5fee12830b/week3/auto_awesome_black_24dp.svg");
   background-size: 40px 40px;
 }
 
