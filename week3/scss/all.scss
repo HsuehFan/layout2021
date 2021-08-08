@@ -137,14 +137,13 @@ body{
     &:nth-child(1){
             p{
                 &::before{
-                    content: url('https://raw.githubusercontent.com/HsuehFan/layout2021/32c55f4739339600c490ba0312ca68ecbc5eb318/week3/auto_awesome_black_24dp.svg');
+                    content: url('https://raw.githubusercontent.com/HsuehFan/layout2021/d36b898b43c482c47a09fcd302939ae51585e420/week3/auto_awesome_black_24dp.svg');
                     background-size: 40px 40px;
                 }
             }
         }
     &:nth-child(2){
         flex-direction: row-reverse;
-
             p{
                 margin-right: 30px;
                 &::before{
