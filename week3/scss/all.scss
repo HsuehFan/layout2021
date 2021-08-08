@@ -137,8 +137,9 @@ body{
     &:nth-child(1){
             p{
                 &::before{
-                    content: url('https://raw.githubusercontent.com/HsuehFan/layout2021/208bafe0f2ac52b71b6f0b3df3b9996de760c792/week3/auto_awesome_black_18dp.svg');
-
+                    content: url('https://raw.githubusercontent.com/HsuehFan/layout2021/626eed86314f287701c39b277da162fa4ea912b2/week3/auto_awesome_black_36dp.svg');
+                    margin-left: 44px;
+                    margin-right: 10px;
                 }
             }
         }
