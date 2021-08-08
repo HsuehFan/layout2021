@@ -4,9 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
 $navBg: #AA0601;
-.bgPink{
-    background-color: #AA06010D;
-} 
+$bgPink: #AA06010D;
 
 // 字體設定
 h1{
@@ -21,6 +19,7 @@ h2{
     font-weight: 600;
     line-height: 70px;
     text-align: center;
+    margin-bottom: 40px;
 }
 h5{
     font-size: 24px;
@@ -92,12 +91,9 @@ body{
 }
 .content{
     padding: 60px 405px 80px;
-    h2{
-        color: #650300;
-        margin-bottom: 40px;
-    }
 }
-.bgPink{
+.feature{
+    background-color: $bgPink;
     ul{
         li{
             margin-right: 30px;
@@ -120,29 +116,57 @@ body{
     h2{
         margin-bottom: 40px;
     }
-    ul{
-        li{
-            display: flex;
-            margin-bottom: 32px;
-            // justify-content: center;
-            align-items: center;
-            img{
-                margin-left: 32px;
+}
+.products-List li{
+    justify-self: start;
+    img{
+        max-width: 635px;
+        height: auto;
+        margin-bottom: 32px;
+        background-size: contain;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        color: #AA0601;
+        font-size: 48px;
+        font-weight: 500;
+        font-style: italic;
+        display: inline;
+        
+        }
+    &:nth-child(1){
+            p{
+                &::before{
+                    content: url('https://raw.githubusercontent.com/HsuehFan/layout2021/32c55f4739339600c490ba0312ca68ecbc5eb318/week3/auto_awesome_black_24dp.svg');
+                    background-size: 40px 40px;
+                }
             }
-            h2{
-                font-family: 'Roboto', sans-serif;
-                color: #AA0601;
-                font-weight: 500;
-                font-style: italic;
-                
-            }
-            &:nth-child(2){
-                flex-direction: row-reverse;
-                
+        }
+    &:nth-child(2){
+        flex-direction: row-reverse;
+            p{
+                margin-right: 30px;
+                &::before{
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-sun.svg");
+                    background-size: 44px 44px;
+                    margin-right: 10px;
+                }
             }
         }
     }
-}
+
+
+    
+    // &:nth-child(2){
+    //     flex-direction: row-reverse;
+        
+    // }
+    // &:nth-child(3){
+    //     flex-direction: row-reverse;
+        
+    // }
+
+
 .adjust{
     max-width: 1920px;
     height: 705px;
@@ -191,6 +215,7 @@ body{
         height: 460px;
         position: relative;
         box-shadow: 0 0 10px #777777;
+        border-radius: 0 0 4px 4px;
         img{
             max-width: 255px;
             max-height: 256px;
@@ -214,10 +239,120 @@ body{
     }
 }
 
+.relation{
+    background-color: $bgPink;
+    h2{color: #000;}
+}
+.formFeeback{
+    max-width: 730px;
+    margin: 0 auto;
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    label{
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    input{
+        font-size: 16px;
+        margin-bottom: 16px;
+        height: 50px;
+        text-indent: 16px;
+        background-color: rgb(250, 241, 240);
+    }
+    textarea{
+        text-indent: 16px;
+        background-color: rgb(250, 241, 240);
+        margin-bottom: 16px;
+    }
+}
+.checkboxType{
+    margin-bottom: 40px;
+    input{
+        width: 16px;
+        height: 16px;
+    }
+    label{
+        font-size: 16px;
+    }
+}
+.submitBtn{
+    margin: 0 auto;
+    input{
+    width: 350px;
+    background-color: $navBg;
+    color: #fff;
+    }
+}
+.foot{
+    margin: 0 auto;
+    width: 1920px;
+    color: #fff;
+    background-color: $navBg;
+    .menu{
+        span{
+            display: block;
+            font-size: 16px;
+            margin-right: 48px; 
+            padding-bottom: 36px;
+            a{
+                color: #FFFFFF;
+            }
+        }
+    }
+    .icon-item{
+        img{
+            margin-left: 48px;
+        }
+    }
+    
+}
+    .infomation{
+        padding-bottom: 24px;
+        width: 1110px;
+        border-bottom: 1px solid #fff;
+        p{
+            font-size: 36px;
+            line-height: 54px;
+            margin-bottom: 16px;
+            
+            &:nth-child(1){
+                    &::before{
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-phone.svg");
+                    margin-right: 26px;
+                    width: 36px;
+                    height: 36px;
+                    vertical-align: middle;
+                    }
+            }
+            &:nth-child(2){
+                    &::before{
+                    font-family: 'Noto Sans TC';
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-mail.svg");
+                    font-weight: 400;
+                    margin-right: 16px;
+                    width: 40px;
+                    height: 32px;
+                    vertical-align: middle;
+                    }
+            }
+        }
+
+            }
 
 
-
-
+    .foot-title{
+        margin-top: 32px;
+        p{
+            
+            font-size: 16px;
+        }
+        .privacy{
+            p{margin-left: 16px;}
+        }
+    }
 // display flex 設定
 .d-flex{
     display: flex;
@@ -226,21 +361,37 @@ body{
     display: flex;
     justify-content: flex-start;
 }
+.d-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
 .d-flex-between{
     display: flex;
     justify-content: space-between;
 }
 .d-flex-around{
     display: flex;
-    justify-content: space-around;
+    justify-content: around;
 }
 .d-flex-center{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
+.justify-start-column{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.d-flex-align-center{
+    display: flex;
+    align-items: center;
+}
+// .d-flex-align-center{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
 // margin-bottom setting
 // mb-4{
 //     margin-bottom: 32px;
