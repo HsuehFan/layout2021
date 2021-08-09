@@ -216,13 +216,9 @@ body {
 }
 
 .products-List li:nth-child(1) p::before {
-<<<<<<< HEAD
-  content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/2d148126cfbb4f9a800531035b5a3ba03b395174/week3/auto_awesome_black_36dp.svg");
+  content: url("../https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/outline_auto_awesome_black_36dp.png");
   margin-left: 44px;
   margin-right: 10px;
-=======
-  content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/208bafe0f2ac52b71b6f0b3df3b9996de760c792/week3/auto_awesome_black_18dp.svg");
->>>>>>> parent of 35b00dc (week3_5)
 }
 
 .products-List li:nth-child(2) {
