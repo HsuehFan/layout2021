@@ -1,0 +1,367 @@
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.nav{
+    background-color: $navBg;
+    padding: 0px 88px;
+    img{
+        padding: 30px 0px;
+    }
+    .logo{
+        max-width: 10%;
+    }
+    .menu{
+        max-width: 50%;
+        align-items: center;
+        li{ 
+            line-height: 30px;
+            padding-left: 64px;
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+                font-size: 20px;
+                &:hover{
+                font-size: 22px;
+                }
+            }
+            
+        }
+    }
+}
+    
+
+.banner{
+    max-width: 100%;
+    height: auto;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png');
+    .title{
+        padding-top: 348px;
+        padding-bottom: 352px;
+        padding-left: 939px;
+        text-align: right;
+        p{
+            font-size: 36px;
+            color: #650300;
+            font-weight: 400;
+            padding-right: 407px;
+            
+        }
+        h1{
+            padding-right: 405px;
+            
+        }
+    }
+}
+.content{
+    padding: 60px 405px 80px;
+}
+.feature{
+    background-color: $bgPink;
+    ul{
+        li{
+            margin-right: 30px;
+            max-width: calc((100%-46.875%)/4);
+            img{
+                margin-top: 48px;
+                margin-bottom: 25px;
+                }
+            &:nth-child(4) img{
+            margin-bottom: 45px;
+            }
+            h5{
+                text-align: center;
+            }
+        
+        }
+    }
+}
+.products{
+    h2{
+        margin-bottom: 40px;
+    }
+}
+.products-List li{
+    justify-self: start;
+    img{
+        max-width: 635px;
+        height: auto;
+        margin-bottom: 32px;
+        background-size: contain;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        color: #AA0601;
+        font-size: 48px;
+        font-weight: 500;
+        font-style: italic;
+        display: inline;
+        
+        }
+    &:nth-child(1){
+            p{
+                &::before{
+                    content: url('https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/outline_auto_awesome_black_36dp.png');
+                    margin-left: 44px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    &:nth-child(2){
+        flex-direction: row-reverse;
+            p{
+                margin-right: 30px;
+                &::before{
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-sun.svg");
+                    margin-right: 10px;
+                }
+            }
+        }
+        &:nth-child(3){
+                p{
+                    
+                    &::before{
+                        content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
+                        background-size: 24px 24px;
+                        margin-left: 44px;
+                        margin-right: 22px;
+                    }
+                }
+            }
+    }
+
+
+    
+    // &:nth-child(2){
+    //     flex-direction: row-reverse;
+        
+    // }
+    // &:nth-child(3){
+    //     flex-direction: row-reverse;
+        
+    // }
+
+
+.adjust{
+    max-width: 1920px;
+    height: 705px;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png');
+    background-position: center;
+}
+.ad{
+    h2{
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    .item1{
+        min-width: 540px;
+        height: 455px;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png');
+        background-size: 540px 455px;
+        // background-repeat: no-repeat;
+        filter: grayscale(60%) brightness(1.5); 
+        h1{
+            text-align: center;
+            font-size: 72px;
+            color: #AA0601;
+            padding-top: 35%;
+        }
+    }
+    .item2{
+        min-width: 540px;
+        height: 455px;
+        line-height: 455px;
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png');
+        background-size: 540px 455px;
+        // background-repeat: no-repeat;
+        filter: grayscale(60%) brightness(1.5); 
+        h1{
+            text-align: center;
+            font-size: 72px;
+            color: #AA0601;
+            padding-top: 35%;
+            
+        }
+    }
+}
+.customer{
+    li{
+        max-width: 255px;
+        height: 460px;
+        position: relative;
+        box-shadow: 0 0 10px #777777;
+        border-radius: 0 0 4px 4px;
+        img{
+            max-width: 255px;
+            max-height: 256px;
+            background-size: contain;
+            border-radius: 4px 4px 0 0;
+            
+        }
+        .card-body{
+            padding: 16px;
+            p{
+                font-size: 14px;
+                line-height: 21px;
+            }
+            span{
+                font-size: 14px;
+                line-height: 21px;
+                position: absolute;
+                bottom: 16px;
+            }
+        }
+    }
+}
+
+.relation{
+    background-color: $bgPink;
+    h2{color: #000;}
+}
+.formFeeback{
+    max-width: 730px;
+    margin: 0 auto;
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    label{
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    input{
+        font-size: 16px;
+        margin-bottom: 16px;
+        height: 50px;
+        text-indent: 16px;
+        background-color: rgb(250, 241, 240);
+    }
+    textarea{
+        text-indent: 16px;
+        background-color: rgb(250, 241, 240);
+        margin-bottom: 16px;
+    }
+}
+.checkboxType{
+    margin-bottom: 40px;
+    input{
+        width: 16px;
+        height: 16px;
+    }
+    label{
+        font-size: 16px;
+    }
+}
+.submitBtn{
+    margin: 0 auto;
+    input{
+    width: 350px;
+    background-color: $navBg;
+    color: #fff;
+    }
+}
+.footer{
+    margin: 0 auto;
+    width: 1920px;
+    color: #fff;
+    background-color: $navBg;
+    .menu{
+        span{
+            display: block;
+            font-size: 16px;
+            margin-right: 48px; 
+            padding-bottom: 36px;
+            a{
+                color: #FFFFFF;
+            }
+        }
+    }
+    .icon-item{
+        img{
+            margin-left: 48px;
+        }
+    }
+    
+}
+    .infomation{
+        padding-bottom: 24px;
+        width: 1110px;
+        border-bottom: 1px solid #fff;
+        p{
+            font-size: 36px;
+            line-height: 54px;
+            margin-bottom: 16px;
+            
+            &:nth-child(1){
+                    &::before{
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-phone.svg");
+                    margin-right: 26px;
+                    width: 36px;
+                    height: 36px;
+                    vertical-align: middle;
+                    }
+            }
+            &:nth-child(2){
+                    &::before{
+                    font-family: 'Noto Sans TC';
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-mail.svg");
+                    font-weight: 400;
+                    margin-right: 16px;
+                    width: 40px;
+                    height: 32px;
+                    vertical-align: middle;
+                    }
+            }
+            a{
+                color: #ffffff;
+            }
+        }
+
+            }
+
+
+    .footer-title{
+        margin-top: 32px;
+        p{
+            
+            font-size: 16px;
+        }
+        .privacy{
+            p{margin-left: 16px;}
+        }
+    }
+// display flex 設定
+.d-flex{
+    display: flex;
+}
+.d-flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.d-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.d-flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+.d-flex-around{
+    display: flex;
+    justify-content: around;
+}
+.d-flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.justify-start-column{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.d-flex-align-center{
+    display: flex;
+    align-items: center;
+}

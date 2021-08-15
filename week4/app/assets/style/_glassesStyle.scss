@@ -1,0 +1,180 @@
+.style-opt{
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    ul{
+        display: flex;
+        li{
+            width: 370px;
+            max-height: auto;
+            border-right: 1px solid $gray2;
+            border-left: 1px solid $gray2;
+            h4{
+                &:hover{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}   
+
+// 最上方的眼鏡樣式選單
+.glasses-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 27px;
+    
+    &:hover{
+        opacity: 50%;
+        
+        
+    }
+    &:nth-child(1){
+            &::before{
+                content: url('https://raw.githubusercontent.com/HsuehFan/layout2021/2a7189e900a51ec3d201d355b605819ed20e782a/week3/auto_awesome_black_36dp%20(1).svg');
+                margin-right: 10px;
+            }
+            border-bottom: 8px solid $navBg;
+    }
+    &:nth-child(2){
+        &::before{
+            content: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week4/icon-sun-black.svg');
+            margin-right: 10px;
+            
+        }
+        
+    }
+    &:nth-child(3){
+        &::before{
+            content: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week4/icon-thunder-black.svg');
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+// 中間的 nav 告廣
+.banner-ad{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    img{
+        vertical-align: middle;
+        width: 960px;
+    }
+}
+
+
+// 眼鏡樣式區
+.glass-product{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    h4{margin-bottom: 40px;}
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 107px;
+
+    .cart-items{
+        width: 255px;
+        height: 224px;
+        margin-bottom: 104px;
+
+        img{
+            width: 255px;
+            height: 164px;
+            opacity: 60%;
+            &:hover{
+                opacity: 100%;
+            }
+        }
+        .cart-title{
+            display: flex;
+            justify-content: space-between;
+            .glasses-type{
+                h5{
+                    color: $black;
+                }
+            }
+            .glasses-price{
+                h5{
+                    color: $navBg;
+                }
+            }
+        }
+        .glasses-color{
+            display: flex;
+            // justify-content: flex-start;
+            .color-type1{
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background-color: $brown;
+                margin-right: 8px;
+                &:hover{
+                    opacity: 60%;
+                }
+            }
+            .color-type2{
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background-color: $orange;
+                &:hover{
+                    opacity: 60%;
+                }
+            }
+        }
+    }
+}
+
+
+// 分頁區
+.page-items{
+    margin: 0 auto;
+    margin-bottom: 160px;
+    .page-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .page-title{
+            padding: 11px 12px;
+            border: 1px solid $lightBack;
+            
+            p{
+                font-size: 19px;
+                line-height: 29px;
+                
+            }
+            &.bg{
+                background-color: $white2;
+            }
+        }
+        ul{
+            display: flex;
+            li{
+                font-size: 18px;
+                line-height: 27px;
+                padding: 12px 16px;
+                border: 1px solid $lightBack;
+                a{color: $black}
+                &:nth-child(2){
+                    background-color: $black;
+                    a{
+                    color: $white1;}
+                }
+                &:hover{
+                    padding: 12px 20px;
+                }
+            }
+
+        }
+    }
+}
