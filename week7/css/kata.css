@@ -1,0 +1,35 @@
+.container{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.main{
+    display: flex;
+}
+
+.mews li{
+    display: flex;
+}
+
+.news img{
+    margin-bottom: 24px;
+}
+
+.news_text{
+    padding: 0 20px;
+}
+
+.news_text h2{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.news_text p, .footer p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer{
+    padding: 3em 0;
+    text-align: center;
+}
