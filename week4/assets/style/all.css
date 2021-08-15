@@ -1,0 +1,487 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::berfor, *::after {
+  box-sizing: border-box; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  color: #650300;
+  font-size: 64px;
+  line-height: 92px;
+  font-weight: 900; }
+
+h2 {
+  color: #650300;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+  margin-bottom: 40px; }
+
+h3 {
+  font-size: 42px;
+  line-height: 63px;
+  color: #000000; }
+
+h4 {
+  font-size: 32px;
+  line-height: 48px;
+  color: #000000; }
+
+h5 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #650300; }
+
+h6 {
+  font-size: 16px;
+  line-height: 24px; }
+
+body {
+  font-family: 'Noto Sans TC', sans-serif, "Microsoft JhengHei", "微軟正黑體"; }
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto; }
+
+.nav {
+  background-color: #AA0601;
+  padding: 0px 88px; }
+  .nav img {
+    padding: 30px 0px; }
+  .nav .logo {
+    max-width: 10%; }
+  .nav .menu {
+    max-width: 50%;
+    align-items: center; }
+    .nav .menu li {
+      line-height: 30px;
+      padding-left: 64px; }
+      .nav .menu li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 20px; }
+        .nav .menu li a:hover {
+          font-size: 22px; }
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png"); }
+  .banner .title {
+    padding-top: 348px;
+    padding-bottom: 352px;
+    padding-left: 939px;
+    text-align: right; }
+    .banner .title p {
+      font-size: 36px;
+      color: #650300;
+      font-weight: 400;
+      padding-right: 407px; }
+    .banner .title h1 {
+      padding-right: 405px; }
+
+.content {
+  padding: 60px 405px 80px; }
+
+.feature {
+  background-color: #AA06010D; }
+  .feature ul li {
+    margin-right: 30px;
+    max-width: calc((100%-46.875%)/4); }
+    .feature ul li img {
+      margin-top: 48px;
+      margin-bottom: 25px; }
+    .feature ul li:nth-child(4) img {
+      margin-bottom: 45px; }
+    .feature ul li h5 {
+      text-align: center; }
+
+.products h2 {
+  margin-bottom: 40px; }
+
+.products-List li {
+  justify-self: start; }
+  .products-List li img {
+    max-width: 635px;
+    height: auto;
+    margin-bottom: 32px;
+    background-size: contain; }
+  .products-List li p {
+    font-family: 'Roboto', sans-serif;
+    color: #AA0601;
+    font-size: 48px;
+    font-weight: 500;
+    font-style: italic;
+    display: inline; }
+  .products-List li:nth-child(1) p::before {
+    content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/outline_auto_awesome_black_36dp.png");
+    margin-left: 44px;
+    margin-right: 10px; }
+  .products-List li:nth-child(2) {
+    flex-direction: row-reverse; }
+    .products-List li:nth-child(2) p {
+      margin-right: 30px; }
+      .products-List li:nth-child(2) p::before {
+        content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-sun.svg");
+        margin-right: 10px; }
+  .products-List li:nth-child(3) p::before {
+    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
+    background-size: 24px 24px;
+    margin-left: 44px;
+    margin-right: 22px; }
+
+.adjust {
+  max-width: 1920px;
+  height: 705px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png");
+  background-position: center; }
+
+.ad h2 {
+  color: #FFFFFF;
+  margin-bottom: 40px; }
+
+.ad .item1 {
+  min-width: 540px;
+  height: 455px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png");
+  background-size: 540px 455px;
+  filter: grayscale(60%) brightness(1.5); }
+  .ad .item1 h1 {
+    text-align: center;
+    font-size: 72px;
+    color: #AA0601;
+    padding-top: 35%; }
+
+.ad .item2 {
+  min-width: 540px;
+  height: 455px;
+  line-height: 455px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png");
+  background-size: 540px 455px;
+  filter: grayscale(60%) brightness(1.5); }
+  .ad .item2 h1 {
+    text-align: center;
+    font-size: 72px;
+    color: #AA0601;
+    padding-top: 35%; }
+
+.customer li {
+  max-width: 255px;
+  height: 460px;
+  position: relative;
+  box-shadow: 0 0 10px #777777;
+  border-radius: 0 0 4px 4px; }
+  .customer li img {
+    max-width: 255px;
+    max-height: 256px;
+    background-size: contain;
+    border-radius: 4px 4px 0 0; }
+  .customer li .card-body {
+    padding: 16px; }
+    .customer li .card-body p {
+      font-size: 14px;
+      line-height: 21px; }
+    .customer li .card-body span {
+      font-size: 14px;
+      line-height: 21px;
+      position: absolute;
+      bottom: 16px; }
+
+.relation {
+  background-color: #AA06010D; }
+  .relation h2 {
+    color: #000; }
+
+.formFeeback {
+  max-width: 730px;
+  margin: 0 auto; }
+  .formFeeback p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px; }
+  .formFeeback label {
+    font-size: 16px;
+    margin-bottom: 4px; }
+  .formFeeback input {
+    font-size: 16px;
+    margin-bottom: 16px;
+    height: 50px;
+    text-indent: 16px;
+    background-color: #faf1f0; }
+  .formFeeback textarea {
+    text-indent: 16px;
+    background-color: #faf1f0;
+    margin-bottom: 16px; }
+
+.checkboxType {
+  margin-bottom: 40px; }
+  .checkboxType input {
+    width: 16px;
+    height: 16px; }
+  .checkboxType label {
+    font-size: 16px; }
+
+.submitBtn {
+  margin: 0 auto; }
+  .submitBtn input {
+    width: 350px;
+    background-color: #AA0601;
+    color: #fff; }
+
+.footer {
+  margin: 0 auto;
+  width: 1920px;
+  color: #fff;
+  background-color: #AA0601; }
+  .footer .menu span {
+    display: block;
+    font-size: 16px;
+    margin-right: 48px;
+    padding-bottom: 36px; }
+    .footer .menu span a {
+      color: #FFFFFF; }
+  .footer .icon-item img {
+    margin-left: 48px; }
+
+.infomation {
+  padding-bottom: 24px;
+  width: 1110px;
+  border-bottom: 1px solid #fff; }
+  .infomation p {
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 16px; }
+    .infomation p:nth-child(1)::before {
+      content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-phone.svg");
+      margin-right: 26px;
+      width: 36px;
+      height: 36px;
+      vertical-align: middle; }
+    .infomation p:nth-child(2)::before {
+      font-family: 'Noto Sans TC';
+      content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-mail.svg");
+      font-weight: 400;
+      margin-right: 16px;
+      width: 40px;
+      height: 32px;
+      vertical-align: middle; }
+    .infomation p a {
+      color: #ffffff; }
+
+.footer-title {
+  margin-top: 32px; }
+  .footer-title p {
+    font-size: 16px; }
+  .footer-title .privacy p {
+    margin-left: 16px; }
+
+.d-flex {
+  display: flex; }
+
+.d-flex-start {
+  display: flex;
+  justify-content: flex-start; }
+
+.d-flex-end {
+  display: flex;
+  justify-content: flex-end; }
+
+.d-flex-between {
+  display: flex;
+  justify-content: space-between; }
+
+.d-flex-around {
+  display: flex;
+  justify-content: around; }
+
+.d-flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.justify-start-column {
+  display: flex;
+  justify-content: start;
+  flex-direction: column; }
+
+.d-flex-align-center {
+  display: flex;
+  align-items: center; }
+
+.style-opt {
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto; }
+  .style-opt ul {
+    display: flex; }
+    .style-opt ul li {
+      width: 370px;
+      max-height: auto;
+      border-right: 1px solid #DCDCDC;
+      border-left: 1px solid #DCDCDC; }
+      .style-opt ul li h4:hover {
+        font-size: 40px; }
+
+.glasses-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 27px; }
+  .glasses-item:hover {
+    opacity: 50%; }
+  .glasses-item:nth-child(1) {
+    border-bottom: 8px solid #AA0601; }
+    .glasses-item:nth-child(1)::before {
+      content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/2a7189e900a51ec3d201d355b605819ed20e782a/week3/auto_awesome_black_36dp%20(1).svg");
+      margin-right: 10px; }
+  .glasses-item:nth-child(2)::before {
+    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week4/icon-sun-black.svg");
+    margin-right: 10px; }
+  .glasses-item:nth-child(3)::before {
+    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week4/icon-thunder-black.svg");
+    margin-right: 10px; }
+
+.banner-ad {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px; }
+  .banner-ad img {
+    vertical-align: middle;
+    width: 960px; }
+
+.glass-product {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center; }
+  .glass-product h4 {
+    margin-bottom: 40px; }
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 107px; }
+  .cart .cart-items {
+    width: 255px;
+    height: 224px;
+    margin-bottom: 104px; }
+    .cart .cart-items img {
+      width: 255px;
+      height: 164px;
+      opacity: 60%; }
+      .cart .cart-items img:hover {
+        opacity: 100%; }
+    .cart .cart-items .cart-title {
+      display: flex;
+      justify-content: space-between; }
+      .cart .cart-items .cart-title .glasses-type h5 {
+        color: #000000; }
+      .cart .cart-items .cart-title .glasses-price h5 {
+        color: #AA0601; }
+    .cart .cart-items .glasses-color {
+      display: flex; }
+      .cart .cart-items .glasses-color .color-type1 {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background-color: #5F3E2D;
+        margin-right: 8px; }
+        .cart .cart-items .glasses-color .color-type1:hover {
+          opacity: 60%; }
+      .cart .cart-items .glasses-color .color-type2 {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background-color: #B75929; }
+        .cart .cart-items .glasses-color .color-type2:hover {
+          opacity: 60%; }
+
+.page-items {
+  margin: 0 auto;
+  margin-bottom: 160px; }
+  .page-items .page-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .page-items .page-section .page-title {
+      padding: 11px 12px;
+      border: 1px solid #555555; }
+      .page-items .page-section .page-title p {
+        font-size: 19px;
+        line-height: 29px; }
+      .page-items .page-section .page-title.bg {
+        background-color: #F2F2F2; }
+    .page-items .page-section ul {
+      display: flex; }
+      .page-items .page-section ul li {
+        font-size: 18px;
+        line-height: 27px;
+        padding: 12px 16px;
+        border: 1px solid #555555; }
+        .page-items .page-section ul li a {
+          color: #000000; }
+        .page-items .page-section ul li:nth-child(2) {
+          background-color: #000000; }
+          .page-items .page-section ul li:nth-child(2) a {
+            color: #ffffff; }
+        .page-items .page-section ul li:hover {
+          padding: 12px 20px; }
+
+/*# sourceMappingURL=all.css.map */
