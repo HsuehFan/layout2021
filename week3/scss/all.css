@@ -107,7 +107,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 100%;
   }
 }
 
@@ -148,13 +148,13 @@ body {
 
 @media (max-width: 768px) {
   .nav {
-    padding: 0px 39px;
+    padding: 0% 5.078%;
   }
   .nav .logo {
     max-width: 11px;
   }
   .nav .menu {
-    max-width: 70%;
+    min-width: 70%;
   }
   .nav .menu li {
     padding-left: 40px;
@@ -195,7 +195,7 @@ body {
   .banner .title {
     padding-top: 372px;
     padding-bottom: 373px;
-    padding-left: 297.5px;
+    padding-left: 38.7%;
     text-align: right;
   }
   .banner .title p {
@@ -212,12 +212,12 @@ body {
 }
 
 .content {
-  padding: 60px 405px 80px;
+  padding: 60px 21.094% 80px;
 }
 
 @media (max-width: 768px) {
   .content {
-    padding: 40px 39px 56px;
+    padding: 40px 5.078% 56px;
   }
   .content h2 {
     font-size: 32px;
@@ -275,7 +275,7 @@ body {
 }
 
 .products {
-  padding: 60px 405px 80px;
+  padding: 60px 21.093% 80px;
 }
 
 .products h2 {
@@ -284,7 +284,7 @@ body {
 
 @media (max-width: 768px) {
   .products {
-    padding: 40px 39px 77px;
+    padding: 40px 4.5% 77px;
   }
   .products h2 {
     font-size: 32px;
@@ -310,7 +310,7 @@ body {
 }
 
 .products-List li img {
-  max-width: 635px;
+  max-width: 57.2%;
   height: auto;
   margin-bottom: 32px;
   background-size: contain;
@@ -355,7 +355,7 @@ body {
 
 @media (max-width: 768px) {
   .products-List li img {
-    max-width: 390px;
+    max-width: 50.78%;
     height: auto;
     margin-bottom: 8px;
     background-size: contain;
@@ -393,6 +393,12 @@ body {
   }
 }
 
+@media (max-width: 360px) {
+  .products-List li img {
+    max-width: 40%;
+  }
+}
+
 .adjust {
   max-width: 1920px;
   height: 705px;
@@ -414,10 +420,11 @@ body {
 }
 
 .ad .item1 {
-  max-width: 540px;
+  min-width: 540px;
   height: 455px;
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png");
-  background-size: 540px 455px;
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-filter: grayscale(60%) brightness(1.5);
           filter: grayscale(60%) brightness(1.5);
 }
@@ -430,11 +437,11 @@ body {
 }
 
 .ad .item2 {
-  max-width: 540px;
+  width: 540px;
   height: 455px;
   line-height: 455px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png");
-  background-size: 540px 455px;
+  background-size: cover;
   -webkit-filter: grayscale(60%) brightness(1.5);
           filter: grayscale(60%) brightness(1.5);
 }
@@ -460,7 +467,7 @@ body {
             justify-content: space-between;
   }
   .ad .ad-outlay .item1 {
-    width: 330px;
+    min-width: 42.97%;
     height: 278px;
     background-size: cover;
   }
@@ -470,12 +477,12 @@ body {
     padding-top: 35%;
   }
   .ad .ad-outlay .item2 {
-    width: 330px;
+    width: 42.97%;
     height: 278px;
     background-size: cover;
   }
   .ad .ad-outlay .item2 h1 {
-    text-align: center;
+    text-align: contain;
     font-size: 32px;
     padding-top: 35%;
   }
@@ -531,7 +538,7 @@ body {
     margin-bottom: 32px;
   }
   .customer .card img {
-    max-width: 330px;
+    min-width: 330px;
     height: auto;
     background-size: cover;
     background-repeat: repeat;
@@ -551,7 +558,7 @@ body {
 
 @media (max-width: 768px) {
   .relation {
-    padding: 40px 159px 56px;
+    padding: 40px 20.7% 56px;
   }
   .relation h2 {
     margin-bottom: 24px;
@@ -560,7 +567,7 @@ body {
 }
 
 .formFeeback {
-  max-width: 730px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -685,7 +692,7 @@ body {
 
 @media (max-width: 768px) {
   .footer {
-    max-width: 768px;
+    max-width: 100%;
     padding-left: 9px;
   }
   .footer .menu span {
@@ -715,16 +722,16 @@ body {
   margin-bottom: 16px;
 }
 
+.infomation p a {
+  color: #FFFFFF;
+}
+
 .infomation p:nth-child(1)::before {
   content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-phone.svg");
   margin-right: 26px;
   width: 36px;
   height: 36px;
   vertical-align: middle;
-}
-
-.infomation p:nth-child(2) a {
-  color: #FFFFFF;
 }
 
 .infomation p:nth-child(2)::before {
