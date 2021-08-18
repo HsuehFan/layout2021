@@ -749,7 +749,7 @@ body {
     margin-bottom: 12px;
   }
   .infomation p:nth-child(1)::before {
-    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-phone.svg");
+    content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/img/outline_phone_white_18dp.png");
     margin-right: 11px;
     width: 18px;
     height: 18px;
@@ -757,7 +757,7 @@ body {
   }
   .infomation p:nth-child(2)::before {
     font-family: 'Noto Sans TC';
-    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-mail.svg");
+    content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/img/outline_email_white_18dp.png");
     font-weight: 400;
     margin-right: 16px;
     width: 40px;
@@ -766,16 +766,33 @@ body {
   }
 }
 
-.foot-title {
+.footer-title {
   margin-top: 32px;
 }
 
-.foot-title p {
+.footer-title p {
   font-size: 16px;
 }
 
-.foot-title .privacy p {
+.footer-title .privacy p {
   margin-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .footer-title {
+    margin-top: 24px;
+  }
+  .footer-title p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer-title .privacy {
+    margin-top: 12px;
+  }
+  .footer-title .privacy p {
+    margin-left: 14px;
+    line-height: 21px;
+  }
 }
 
 .d-flex {
