@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import "_reset.scss";
+@import "reset";
+@import "grid";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
@@ -37,6 +38,9 @@ body{
 .container{
     max-width: 1920px;
     margin: 0 auto;
+    @include pad(){
+        max-width: 768px;
+    }
 }
 .nav{
     background-color: $navBg;
@@ -63,14 +67,28 @@ body{
             }
             
         }
+
+    }
+    @include pad(){
+        padding: 0px 39px;
+        .logo{
+            max-width: 11px;
+        }
+        .menu{
+            max-width: 70%;
+            li{
+                padding-left: 40px;
+            }
+        }
     }
 }
-    
 
 .banner{
     max-width: 100%;
     height: auto;
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     .title{
         padding-top: 348px;
         padding-bottom: 352px;
@@ -88,16 +106,43 @@ body{
             
         }
     }
+    @include pad(){
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png');
+        background-size: cover;
+        .title{
+            padding-top: 372px;
+            padding-bottom: 373px;
+            padding-left: 297.5px;
+            text-align: right;
+            p{
+                font-size: 20px;
+                color: #650300;
+                font-weight: 400;
+                padding-right: 43.5px;
+            }
+            h1{
+                padding-right: 38.5px;
+                font-size: 48px;
+                line-height: 72px;
+                
+            }
+        }
+        
+    }
 }
 .content{
     padding: 60px 405px 80px;
+    @include pad(){
+        padding: 40px 76px 56px 77px;
+    }
 }
 .feature{
     background-color: $bgPink;
     ul{
+        display: flex;
+        justify-content: space-between;
         li{
-            margin-right: 30px;
-            max-width: calc((100%-46.875%)/4);
+            max-width: 255px;
             img{
                 margin-top: 48px;
                 margin-bottom: 25px;
@@ -111,12 +156,40 @@ body{
         
         }
     }
+    @include pad(){
+        h2{font-size: 32px; line-height: 48px;}
+        ul{
+            flex-wrap: wrap;
+            h5{
+                font-size: 24px;
+                line-height: 36px;
+            }
+            h6{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            
+        }
+    }
 }
 .products{
     h2{
         margin-bottom: 40px;
     }
+    @include pad(){
+        h2{
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+    }
 }
+.products-List{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .products-List li{
     justify-self: start;
     img{
@@ -164,19 +237,57 @@ body{
                     }
                 }
             }
+        @include pad(){
+            img{
+                max-width: 390px;
+                height: auto;
+                margin-bottom: 8px;
+                background-size: contain;
+            }
+            p{
+                font-family: 'Roboto', sans-serif;
+                color: #AA0601;
+                font-size: 28px;
+                font-weight: 500;
+                font-style: italic;
+                display: inline;
+                }
+                &:nth-child(1){
+                    p{
+                        &::before{
+                            content: u"rl('https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/outline_auto_awesome_black_36dp.png')";
+                            transform: scale(24px 24px);
+                            margin-left: 32px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            &:nth-child(2){
+                    flex-direction: row;
+                    p{
+                        &::before{
+                            content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-sun.svg");
+                            margin-left: 32px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                        p{
+                            
+                            &::before{
+                                content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
+
+                                margin-left: 30px;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
     }
 
 
     
-    // &:nth-child(2){
-    //     flex-direction: row-reverse;
-        
-    // }
-    // &:nth-child(3){
-    //     flex-direction: row-reverse;
-        
-    // }
-
 
 .adjust{
     max-width: 1920px;
@@ -297,7 +408,7 @@ body{
     color: #fff;
     }
 }
-.foot{
+.footer{
     margin: 0 auto;
     width: 1920px;
     color: #fff;
@@ -320,7 +431,7 @@ body{
     }
     
 }
-    .infomation{
+.infomation{
         padding-bottom: 24px;
         width: 1110px;
         border-bottom: 1px solid #fff;
@@ -351,10 +462,10 @@ body{
             }
         }
 
-            }
+}
 
 
-    .foot-title{
+.foot-title{
         margin-top: 32px;
         p{
             
