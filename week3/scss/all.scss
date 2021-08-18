@@ -133,7 +133,10 @@ body{
 .content{
     padding: 60px 405px 80px;
     @include pad(){
-        padding: 40px 76px 56px 77px;
+        padding: 40px 39px 56px;
+        h2{
+            font-size: 32px;
+        }
     }
 }
 .feature{
@@ -141,6 +144,7 @@ body{
     ul{
         display: flex;
         justify-content: space-between;
+        padding: 0 37px;
         li{
             max-width: 255px;
             img{
@@ -173,10 +177,12 @@ body{
     }
 }
 .products{
+    padding: 60px 405px 80px;
     h2{
         margin-bottom: 40px;
     }
     @include pad(){
+        padding: 40px 39px 77px;
         h2{
             font-size: 32px;
             line-height: 48px;
@@ -226,17 +232,16 @@ body{
                 }
             }
         }
-        &:nth-child(3){
-                p{
-                    
-                    &::before{
-                        content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
-                        background-size: 24px 24px;
-                        margin-left: 44px;
-                        margin-right: 22px;
-                    }
+    &:nth-child(3){
+            p{
+                
+                &::before{
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
+                    margin-left: 44px;
+                    margin-right: 22px;
                 }
             }
+        }
         @include pad(){
             img{
                 max-width: 390px;
@@ -255,7 +260,7 @@ body{
                 &:nth-child(1){
                     p{
                         &::before{
-                            content: u"rl('https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/outline_auto_awesome_black_36dp.png')";
+                            content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/img/outline_auto_awesome_black_18dp.png");
                             transform: scale(24px 24px);
                             margin-left: 32px;
                             margin-right: 10px;
@@ -266,24 +271,23 @@ body{
                     flex-direction: row;
                     p{
                         &::before{
-                            content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-sun.svg");
+                            content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/img/outline_light_mode_black_18dp.png");
                             margin-left: 32px;
                             margin-right: 10px;
                         }
                     }
                 }
-                &:nth-child(3){
-                        p{
-                            
-                            &::before{
-                                content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
-
-                                margin-left: 30px;
-                                margin-right: 8px;
-                            }
+            &:nth-child(3){
+                    p{
+                        
+                        &::before{
+                            content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/img/twotone_flash_on_black_18dp.png");
+                            margin-left: 30px;
+                            margin-right: 8px;
                         }
                     }
                 }
+            }
     }
 
 
@@ -294,6 +298,11 @@ body{
     height: 705px;
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png');
     background-position: center;
+    @include pad(){
+        max-width: 768px;
+        height: 452px;
+        background-size: cover;
+    }
 }
 .ad{
     h2{
@@ -301,7 +310,7 @@ body{
         margin-bottom: 40px;
     }
     .item1{
-        min-width: 540px;
+        max-width: 540px;
         height: 455px;
         background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png');
         background-size: 540px 455px;
@@ -315,7 +324,7 @@ body{
         }
     }
     .item2{
-        min-width: 540px;
+        max-width: 540px;
         height: 455px;
         line-height: 455px;
         background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png');
@@ -330,7 +339,39 @@ body{
             
         }
     }
+    @include pad(){
+        h2{
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+        .ad-outlay{
+            display: flex;
+            justify-content: space-between;
+            .item1{
+                width: 330px;
+                height: 278px;
+                background-size: cover;
+                h1{
+                    text-align: center;
+                    font-size: 32px;
+                    padding-top: 35%;
+                }
+            }
+            .item2{
+                width: 330px;
+                height: 278px;
+                background-size: cover;
+                h1{
+                    text-align: center;
+                    font-size: 32px;
+                    padding-top: 35%;
+                }
+            }
+        }
+        
+    }
 }
+
 .customer{
     li{
         max-width: 255px;
@@ -341,7 +382,7 @@ body{
         img{
             max-width: 255px;
             max-height: 256px;
-            background-size: contain;
+            background-size: cover;
             border-radius: 4px 4px 0 0;
             
         }
@@ -359,11 +400,38 @@ body{
             }
         }
     }
+    @include pad(){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card{
+            max-width: 330px;
+            height: 460px;
+            margin-bottom: 32px;
+            img{
+                max-width: 330px;
+                height: auto;
+                background-size: cover;
+                background-repeat: repeat;
+                }
+            .card-body{
+                padding: 16px 24px;
+            }
+        }
+        margin-bottom: -32px;
+    }
 }
 
 .relation{
     background-color: $bgPink;
     h2{color: #000;}
+    @include pad(){
+        padding: 40px 159px 56px;
+        h2{
+            margin-bottom: 24px;
+            line-height: 48px;
+        }
+    }
 }
 .formFeeback{
     max-width: 730px;
@@ -389,6 +457,30 @@ body{
         background-color: rgb(250, 241, 240);
         margin-bottom: 16px;
     }
+    @include pad(){
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+        label{
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        input{
+            font-size: 14px;
+            margin-bottom: 8px;
+            height: 36px;
+            text-indent: 12px;
+            background-color: rgb(250, 241, 240);
+        }
+        textarea{
+            text-indent: 14px;
+            height: 100px;
+            background-color: rgb(250, 241, 240);
+            margin-bottom: 8px;
+        }
+    }
 }
 .checkboxType{
     margin-bottom: 40px;
@@ -399,6 +491,17 @@ body{
     label{
         font-size: 16px;
     }
+    @include pad(){
+        margin-bottom: 20px;
+        input{
+            width: 14px;
+            line-height: 21px;
+            height: 14px;
+        }
+        label{
+            font-size: 14px;
+        }
+    }
 }
 .submitBtn{
     margin: 0 auto;
@@ -407,10 +510,20 @@ body{
     background-color: $navBg;
     color: #fff;
     }
+    @include pad(){
+        input{
+            width: 210px;
+            margin-bottom: -8px;
+            input{
+                font-size: 14px;
+            }
+        }
+        
+    }
 }
 .footer{
     margin: 0 auto;
-    width: 1920px;
+    max-width: 1920px;
     color: #fff;
     background-color: $navBg;
     .menu{
@@ -429,7 +542,28 @@ body{
             margin-left: 48px;
         }
     }
-    
+    @include pad(){
+        max-width: 768px;
+        padding-left: 9px;
+        .menu{
+            span{
+                display: block;
+                font-size: 16px;
+                margin-right: 18px; 
+                padding-bottom: 18px;
+                a{
+                    color: #FFFFFF;
+                }
+            } 
+    }
+    .icon-item{
+        img{
+            max-width: 24px;
+            margin-left: 24px;
+            }
+        }
+    }
+        
 }
 .infomation{
         padding-bottom: 24px;
@@ -450,6 +584,7 @@ body{
                     }
             }
             &:nth-child(2){
+                    a{color: #FFFFFF;}
                     &::before{
                     font-family: 'Noto Sans TC';
                     content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-mail.svg");
@@ -461,7 +596,36 @@ body{
                     }
             }
         }
-
+    @include pad(){
+        padding-bottom: 20px;
+        width: 690px;
+        border-bottom: 1px solid #fff;
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 12px;
+            &:nth-child(1){
+                    &::before{
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-phone.svg");
+                    margin-right: 11px;
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    }
+            }
+            &:nth-child(2){
+                    &::before{
+                    font-family: 'Noto Sans TC';
+                    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-mail.svg");
+                    font-weight: 400;
+                    margin-right: 16px;
+                    width: 40px;
+                    height: 32px;
+                    vertical-align: middle;
+                    }
+            }
+        }
+    }
 }
 
 

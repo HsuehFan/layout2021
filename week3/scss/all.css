@@ -217,7 +217,10 @@ body {
 
 @media (max-width: 768px) {
   .content {
-    padding: 40px 76px 56px 77px;
+    padding: 40px 39px 56px;
+  }
+  .content h2 {
+    font-size: 32px;
   }
 }
 
@@ -232,6 +235,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 37px;
 }
 
 .feature ul li {
@@ -270,11 +274,18 @@ body {
   }
 }
 
+.products {
+  padding: 60px 405px 80px;
+}
+
 .products h2 {
   margin-bottom: 40px;
 }
 
 @media (max-width: 768px) {
+  .products {
+    padding: 40px 39px 77px;
+  }
   .products h2 {
     font-size: 32px;
     line-height: 48px;
@@ -338,7 +349,6 @@ body {
 
 .products-List li:nth-child(3) p::before {
   content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
-  background-size: 24px 24px;
   margin-left: 44px;
   margin-right: 22px;
 }
@@ -359,7 +369,7 @@ body {
     display: inline;
   }
   .products-List li:nth-child(1) p::before {
-    content: u "rl('https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/outline_auto_awesome_black_36dp.png')";
+    content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/img/outline_auto_awesome_black_18dp.png");
     -webkit-transform: scale(24px 24px);
             transform: scale(24px 24px);
     margin-left: 32px;
@@ -372,12 +382,12 @@ body {
             flex-direction: row;
   }
   .products-List li:nth-child(2) p::before {
-    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-sun.svg");
+    content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/img/outline_light_mode_black_18dp.png");
     margin-left: 32px;
     margin-right: 10px;
   }
   .products-List li:nth-child(3) p::before {
-    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-thunder.svg");
+    content: url("https://raw.githubusercontent.com/HsuehFan/layout2021/main/week3/img/twotone_flash_on_black_18dp.png");
     margin-left: 30px;
     margin-right: 8px;
   }
@@ -390,13 +400,21 @@ body {
   background-position: center;
 }
 
+@media (max-width: 768px) {
+  .adjust {
+    max-width: 768px;
+    height: 452px;
+    background-size: cover;
+  }
+}
+
 .ad h2 {
   color: #FFFFFF;
   margin-bottom: 40px;
 }
 
 .ad .item1 {
-  min-width: 540px;
+  max-width: 540px;
   height: 455px;
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png");
   background-size: 540px 455px;
@@ -412,7 +430,7 @@ body {
 }
 
 .ad .item2 {
-  min-width: 540px;
+  max-width: 540px;
   height: 455px;
   line-height: 455px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png");
@@ -428,6 +446,41 @@ body {
   padding-top: 35%;
 }
 
+@media (max-width: 768px) {
+  .ad h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .ad .ad-outlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ad .ad-outlay .item1 {
+    width: 330px;
+    height: 278px;
+    background-size: cover;
+  }
+  .ad .ad-outlay .item1 h1 {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 35%;
+  }
+  .ad .ad-outlay .item2 {
+    width: 330px;
+    height: 278px;
+    background-size: cover;
+  }
+  .ad .ad-outlay .item2 h1 {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 35%;
+  }
+}
+
 .customer li {
   max-width: 255px;
   height: 460px;
@@ -440,7 +493,7 @@ body {
 .customer li img {
   max-width: 255px;
   max-height: 256px;
-  background-size: contain;
+  background-size: cover;
   border-radius: 4px 4px 0 0;
 }
 
@@ -460,12 +513,50 @@ body {
   bottom: 16px;
 }
 
+@media (max-width: 768px) {
+  .customer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: -32px;
+  }
+  .customer .card {
+    max-width: 330px;
+    height: 460px;
+    margin-bottom: 32px;
+  }
+  .customer .card img {
+    max-width: 330px;
+    height: auto;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  .customer .card .card-body {
+    padding: 16px 24px;
+  }
+}
+
 .relation {
   background-color: #AA06010D;
 }
 
 .relation h2 {
   color: #000;
+}
+
+@media (max-width: 768px) {
+  .relation {
+    padding: 40px 159px 56px;
+  }
+  .relation h2 {
+    margin-bottom: 24px;
+    line-height: 48px;
+  }
 }
 
 .formFeeback {
@@ -498,6 +589,31 @@ body {
   margin-bottom: 16px;
 }
 
+@media (max-width: 768px) {
+  .formFeeback p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .formFeeback label {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  .formFeeback input {
+    font-size: 14px;
+    margin-bottom: 8px;
+    height: 36px;
+    text-indent: 12px;
+    background-color: #faf1f0;
+  }
+  .formFeeback textarea {
+    text-indent: 14px;
+    height: 100px;
+    background-color: #faf1f0;
+    margin-bottom: 8px;
+  }
+}
+
 .checkboxType {
   margin-bottom: 40px;
 }
@@ -511,6 +627,20 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 768px) {
+  .checkboxType {
+    margin-bottom: 20px;
+  }
+  .checkboxType input {
+    width: 14px;
+    line-height: 21px;
+    height: 14px;
+  }
+  .checkboxType label {
+    font-size: 14px;
+  }
+}
+
 .submitBtn {
   margin: 0 auto;
 }
@@ -521,9 +651,19 @@ body {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .submitBtn input {
+    width: 210px;
+    margin-bottom: -8px;
+  }
+  .submitBtn input input {
+    font-size: 14px;
+  }
+}
+
 .footer {
   margin: 0 auto;
-  width: 1920px;
+  max-width: 1920px;
   color: #fff;
   background-color: #AA0601;
 }
@@ -541,6 +681,26 @@ body {
 
 .footer .icon-item img {
   margin-left: 48px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    max-width: 768px;
+    padding-left: 9px;
+  }
+  .footer .menu span {
+    display: block;
+    font-size: 16px;
+    margin-right: 18px;
+    padding-bottom: 18px;
+  }
+  .footer .menu span a {
+    color: #FFFFFF;
+  }
+  .footer .icon-item img {
+    max-width: 24px;
+    margin-left: 24px;
+  }
 }
 
 .infomation {
@@ -563,6 +723,10 @@ body {
   vertical-align: middle;
 }
 
+.infomation p:nth-child(2) a {
+  color: #FFFFFF;
+}
+
 .infomation p:nth-child(2)::before {
   font-family: 'Noto Sans TC';
   content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-mail.svg");
@@ -571,6 +735,35 @@ body {
   width: 40px;
   height: 32px;
   vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .infomation {
+    padding-bottom: 20px;
+    width: 690px;
+    border-bottom: 1px solid #fff;
+  }
+  .infomation p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+  .infomation p:nth-child(1)::before {
+    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-phone.svg");
+    margin-right: 11px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
+  .infomation p:nth-child(2)::before {
+    font-family: 'Noto Sans TC';
+    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/70ea594ef6d9a4686cfae94eedd217f4484d45c3/week3/icon-mail.svg");
+    font-weight: 400;
+    margin-right: 16px;
+    width: 40px;
+    height: 32px;
+    vertical-align: middle;
+  }
 }
 
 .foot-title {
