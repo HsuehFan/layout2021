@@ -1,0 +1,21 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-side-bg {
+  height: 800px;
+}
+
+.menu-side-bg li:first-child img {
+  max-width: 143px;
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.carPhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=layout.css.map */
