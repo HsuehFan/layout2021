@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+
+  </head>
+
+  <body>
+    <div class="container-lg">
+
+      <!-- 側邊選單區域 -->
+      <div class="row text-dark">
+        <div class="col-3 bg-light ps-0">
+          <ul class="nav d-flex flex-column menu-side-bg position-relative">
+            <li class="nav-item mb-5 d-flex justify-content-start align-items-center" >
+              <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8a71940d3cd9c932e7126e75e093f68f3a861b79/week5/logo-ANSWER.svg" alt="">
+            </li>
+            <li class="nav-item mb-3 ms-5 d-flex justify-content-start align-items-baseline" >
+              <i class="fas fa-poll"></i>
+              <a class="nav-link fw-bold" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item mb-3 ms-5 d-flex justify-content-start align-items-center">
+              <i class="fas fa-comments"></i>
+              <a class="nav-link fw-bold" href="#">Question</a>
+            </li>
+            <li class="nav-item mb-3 ms-5 d-flex justify-content-start align-items-center">
+              <i class="fas fa-clipboard-list"></i><a class="nav-link fw-bold" href="#">Assignment</a>
+            </li>
+            <li class="nav-item mb-3 ms-5 d-flex justify-content-start align-items-center">
+              <i class="fas fa-caret-square-right"></i><a class="nav-link fw-bold" href="#">Course</a>
+            </li>
+            <li class="nav-item ps-4 mb-3 d-flex justify-content-start align-items-center border-start border-3 border-success">
+              <i class="fas fa-user-friends text-success"></i><a class="nav-link text-success fw-bold" href="#">Admin</a>
+            </li>
+            <li class="nav-item mb-3 ms-5 d-flex justify-content-start align-items-center">
+              <i class="fas fa-cog"></i><a class="nav-link fw-bold" href="#">Settings</a>
+            </li>
+
+
+                <!-- 帳號顯示 -->
+                <li class="nav-item ms-5 d-flex justify-content-start align-items-center position-absolute bottom-0">
+                  <img class="carPhoto" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg" alt="">
+                  <div class="card-body ms-1">
+                    <div class="card-title m-0 p-0">
+                      <h4 class="m-0">Andy&nbsp;Chen</h4>
+                    </div>
+                    <div class="card-content">
+                      <h5><a class="text-secondary" href="mailto:andy0401@mail.com">andy0401@mail.com</a></h5>
+                    </div>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        
+        
+
+
+          <!-- 主要內容 -->
+          <div class="col-9 chat-content">
+            <!-- NavBar 選單  -->
+            <div class="col-12 mt-4 mb-6">
+                <!-- <div class="col-5 d-flex justify-content-between align-items-center ms-5">
+                  <h3>Admin</h3>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-plus text-success me-2 mb-2"></i><h4>Add New Admin</h4>
+                  </div>
+                </div>
+                <div class="col-7 d-flex justify-content-end">
+                  <i class="fas fa-search me-3"></i>
+                  <i class="fas fa-bell"></i>
+                </div> -->
+                <table class="table table-borderless mb-5 ms-3">
+                  <thead>
+                    <tr>
+                        <th scope="col"><h3>Admin</h3></th>
+                        <td colspan="10"><a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#add-New-Admin"><i class="fas fa-plus text-success me-2 mb-2"></i><h4>Add New Admin</h4></a></td>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                        <td scope="col"><i class="fas fa-search me-3"></i></td>
+                        <td scope="col text-end"><i class="fas fa-bell"></i></td>
+                    </tr>
+                  </thead>
+            </div>
+
+            <!-- index內容 -->
+            <div class="col-12 ms-5">
+              
+    <%- contents %>
+            </div>
+          </div>  
+    </div>
+  </div>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <link rel="stylesheet" href="./assets/style/.layout.css">
+  </body>
+
+</html>

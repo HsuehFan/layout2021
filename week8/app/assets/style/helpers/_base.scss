@@ -1,0 +1,29 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    overflow-x: hidden;
+}
+i{
+    vertical-align: middle;
+}
+img{
+    vertical-align: middle;
+    object-fit: cover;
+}
+.btn-primary{
+    color: #707070;
+    
+}
+.btn{
+    font-size: 1.25rem;
+}
+.btn-second, .bg-primary{
+    color: #fff;
+    
+}
+.badge{
+    color: #707070;
+}
+.container-sm{
+    max-width: 375px;
+    padding: 0 15px;
+}

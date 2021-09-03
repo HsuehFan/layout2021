@@ -1,0 +1,258 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- index talbe 主內容 -->
+<table class="table table-hover mb-6 ms-3">
+    <thead>
+      <tr>
+        <th scope="col">ID<i class="fas fa-arrow-down ms-1 text-success"></i></th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Verified</th>
+        <th scope="col"></th>
+        <th scope="col text-end"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row"><a href="#" data-bs-toggle="modal" data-bs-target="#user-Info">#1</a></td>
+        <td><a href="#" data-bs-toggle="modal" data-bs-target="#user-Info">Emir Wicks</a></td>
+        <td><a href="#" data-bs-toggle="modal" data-bs-target="#user-Info">emir.wicks@mail.com</a></td>
+        <td><a href="#" data-bs-toggle="modal" data-bs-target="#user-Info">Yes</a></td>
+        <td class="text-end"><a href="#" data-bs-toggle="modal" data-bs-target="#user-Info"><i class="fas fa-eye"></i></a></td>
+        <td class="text-end"><a href="#" data-bs-toggle="modal" data-bs-target="#edit-Info"><i class="fas fa-pen"></i></a></td>
+      </tr>
+      <tr class="py-3">
+        <td scope="row">#2</td>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+      <tr class="my-3">
+        <td scope="row">#3</td>
+        <td>Mahima Lopez</td>
+        <td>mahima.lopez@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+        <td scope="row">#4</td>
+        <td>Pharrell Murray</td>
+        <td>pharrell.murray@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+        <td scope="row">#5</td>
+        <td>Annika Mcbride</td>
+        <td>annika.mcbride@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+        <td scope="row">#6</td>
+        <td>Fatimah Clark</td>
+        <td>fatimah.clark@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+        <td scope="row">#7</td>
+        <td>Klaudia Rhodes</td>
+        <td>klaudia.rhodes@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+        <td scope="row">#8</td>
+        <td>Tillie Lucero</td>
+        <td>tillie.lucero@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+        <td scope="row">#9</td>
+        <td>Sabrina Stephenson</td>
+        <td>sabrina.stephenson@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+        <td scope="row">#10</td>
+        <td>Annie Smith</td>
+        <td>annie.smith@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end"><i class="fas fa-eye"></i></td>
+        <td class="text-end"><i class="fas fa-pen"></i></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <!-- 分頁欄 -->
+  <div class="col d-flex justify-content-end pt-4">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link text-success" href="#" aria-label="Previous">
+                <i class="fas fa-angle-left"></i>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link text-success" href="#" aria-label="Next">
+                <i class="fas fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </div>
+
+  <!-- add-New-Admin Modal 互動視窗 -->
+  <div class="modal fade" id="add-New-Admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h3 class="modal-title" id="staticBackdropLabel">New Admin</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- 表單位置 -->
+            <h4 class="fw-bold mb-0">Account</h4>
+            <div class="mb-3">
+                <label for="accountName" class="form-label fs-5 text-dark mb-0">Name</label>
+                <input type="text" class="form-control" id="accountName">
+            </div>
+            <div class="mb-4">
+                <label for="E-mail" class="form-label fs-5 text-dark mb-0">Email</label>
+                <input type="text" class="form-control" id="E-mail">
+            </div>
+            
+            <hr class="px-5 mb-5 text-gray400">
+            <div class="fs-7 fw-bold mb-3">Verification</div>
+            <div class="d-flex align-self-stretch mb-3">
+                <i class="fas fa-exclamation-triangle me-2 text-danger"></i><h4 calss="pb-2">Unverified</h4>
+            </div>
+            <a href="#"><div class="border border-1 p-2 text-center text-success">Send Verification Mail</div></a>
+            <hr class="px-5 mb-5 text-gray400">
+            <label for="chooes" class="form-label fs-7 mb-3 text-dark fw-bold">Access Level</label>
+            <select class="form-select text-secondary mb-5" aria-label="Default select example">
+                <option selected>-Choose access level-</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            <hr class="px-5 mb-4 text-gray400">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success col-3" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success col-2">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- user-Info Modal 互動視窗 -->
+  <!-- Modal -->
+<div class="modal fade" id="user-Info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="card p-3">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card-head">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emir.jpeg" alt="user-photo" class="user-photo">
+                    </div>
+                </div>
+                <div class="col-8">
+                        <div class="col d-flex justify-content-between align-items-center">
+                            <h4>#1</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                            <h4 class="mb-0">Admin</h4>
+
+                            <h3 class="mb-0">Emir Wicks</h3>
+
+                            <h4 class="mb-0 text-secondary">emir.wicks@mail.com</h4>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingOne">
+                                    <a class="accordion-button collapsed p-2" href="#" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h4 class="bg-light">Verified</h4>
+                                    </a>
+                                    </h4>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="row px-2 py-3 justify-content-end">
+                                        <button type="button" class="btn btn-outline-danger col-7 me-3" data-bs-dismiss="modal">Deactivate</button>
+                                        <button type="button" class="btn btn-success col-4 me-2">Edit</button>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- edit-Info Modal 互動視窗 -->
+    <div class="modal fade" id="edit-Info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <h3 class="modal-title" id="staticBackdropLabel">Edit Admin</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 表單位置 -->
+                <h4 class="fw-bold mb-0">Account</h4>
+                <div class="mb-3">
+                    <label for="accountName" class="form-label fs-5 text-dark mb-0">Name</label>
+                    <input type="text" class="form-control border-0" id="accountName" value="Emir Wicks" aria-label="Disabled input example" disabled readonly>
+                </div>
+                <div class="mb-4">
+                    <label for="E-mail" class="form-label fs-5 text-dark mb-0">Email</label>
+                    <input type="text" class="form-control border-0" id="E-mail" value="emir.wicks@mail.com" aria-label="Disabled input example" disabled readonly>
+                </div>
+                
+                <hr class="px-5 mb-5 text-gray400">
+                <div class="fs-7 fw-bold mb-3">Verification</div>
+                <div class="col d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center" mb-3">
+                        <i class="fas fa-check-circle me-2"></i><h4 class="mt-2">Verified</h4>
+                    </div>
+                    <h4>2020/4/12</h4>
+                </div>
+
+                <div class="border border-1 p-2 text-center text-gray400">Send Verification Mail</div>
+                <hr class="px-5 mb-5 text-gray400">
+                <label for="chooes" class="form-label fs-7 mb-3 text-dark fw-bold">Access Level</label>
+                <select class="form-select text-dark mb-5" aria-label="Default select example">
+                    <option selected>Admin</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                <hr class="px-5 mb-4 text-gray400">
+            </div>
+    
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-success col-3" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success col-2">Updata</button>
+            </div>
+          </div>
+        </div>
+      </div>
